@@ -9,43 +9,17 @@
   <meta charset="utf-8">
   <title>Mashape Query</title>
   
-  <link rel="stylesheet" href="css/theme.css">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<!-- <body id="backdrop" class="img-responsive">
+<body id="backdrop" class="img-responsive">
 
-  <button onclick="doIt()">Run the request</button>
-  <div id="output">The API request is:</div>
-
-  <button id="newquote">Run the request</button>
+  <!-- <button onclick="doIt()">Run the request</button>
   <div id="output">The API request is:</div> -->
 
-  <body id="backdrop">
-  <div id="wrapper">
-    
-    
-    <div id="quote-box" class = "container-fluid">
-      
-      <div class="row">
-        <div id ="quote" class="col-md-12 col-centered">
-        THERE'S STUFF HERE!
-        </div>
-      
-        <div class="row">
-          <div id="author" class="col-md-6 pull-right text-right">            
-        
-          </div>
-        </div>
-
-        <div class="row">
-          <button id="newquote">New Quote</button>
-        </div>
-                  
-      </div>
-    </div>  
-  
-  </div>
+  <button id="newquote">Run the request</button>
+  <div id="output">The API request is:</div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/functions.js"></script>

@@ -1,0 +1,20 @@
+body {
+  background-color: #42317B;
+  height: 100%;
+}
+
+#wrapper {
+  
+  margin-bottom: 0px; 
+  height: 400px;
+  width: 800px;
+  margin: 100px auto 100px auto;
+}
+
+#quote-box {
+  background-color: #171229;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  /*border-radius: 15px;*/
+}
