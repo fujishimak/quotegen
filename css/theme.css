@@ -1,4 +1,6 @@
 body {
+  background-image: url('https://source.unsplash.com/category/nature/1600x900');
+  background-size: cover;
   background-color: #42317B;
   height: 100%;
 }
@@ -12,7 +14,8 @@ body {
 }
 
 #quote-box {
-  background-color: #171229;
+  
+  background-color: rgba(246,237,230, 0.8);
   height: 100%;
   width: 100%;
   padding: 50px;

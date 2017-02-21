@@ -20,7 +20,7 @@ function doIt() {
       
         document.getElementByID("author").html = "<h3><i class='fa fa-pencil' aria-hidden='true'></i><em> " + data.author + "</h3>";*/
 
-        document.getElementById("backdrop").style.backgroundImage = "url('https://source.unsplash.com/random/1600x900')";
+        // document.getElementById("backdrop").style.backgroundImage = "url('https://source.unsplash.com/random/1600x900')";
 
         document.getElementById("quote").innerHTML =  "<h1><i class='fa fa-quote-left' aria-hidden='true'></i> " + data.quote + "</h1>";
       
@@ -32,6 +32,7 @@ function doIt() {
     xhr.setRequestHeader("X-Mashape-Authorization", "lVCCMNcV04mshM6VhRuhyWjyf5oFp1XCVpUjsndSIVCM8AyGPh"); // Enter here your Mashape key
     }
 });
+
 
  /*var output = $.ajax({
     url: 'https://source.unsplash.com/category/nature/1600x900', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
@@ -54,13 +55,34 @@ function doIt() {
 
 }
 
+
+function doPic(){
+
+    var sel = 0;
+    var category = ["buildings", "nature", "objects", "technology"];
+
+    sel = Math.ceil(Math.random()*3);
+
+    /*Preload new backgroundImage. Animate background image swap using jQuery animate()*/
+
+    var next = new Image();
+
+    next.src = "https://source.unsplash.com/category/" + category[sel] + "/1600x900";
+
+    document.getElementById("backdrop").style.backgroundImage = "";
+    // $("backdrop").animate({background-image: url(' + next.src + ')}, 1000, function(){});
+
+    document.getElementById("backdrop").style.backgroundImage = "url('https://source.unsplash.com/category/" + category[sel] + "/1600x900')"; 
+}
+
 //Check if DOM is safe to manipulate, run quote function and add event handler to buttons. $(document).ready is really deprecated...$(function(){...}); is now recommended. 
 $(document).ready(function(){
 
+    //doPic();
     doIt();
-
     
     document.getElementById("newquote").addEventListener("click", doIt, true);
+    document.getElementById("newquote").addEventListener("click", doPic, true);
 
 
 });
