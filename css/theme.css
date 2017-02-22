@@ -1,6 +1,6 @@
 body {
   background-image: url('https://source.unsplash.com/category/nature/1600x900');
-  background-size: cover;
+  background-size: cover no-repeat;
   background-color: #42317B;
   height: 100%;
 }
@@ -9,7 +9,7 @@ body {
   
   margin-bottom: 0px; 
   height: 400px;
-  width: 800px;
+  width: 600px;
   margin: 100px auto 100px auto;
 }
 
@@ -20,4 +20,16 @@ body {
   width: 100%;
   padding: 50px;
   /*border-radius: 15px;*/
+}
+
+#quote {
+
+  height: 200px;
+  width: 100%;
+}
+
+#author{
+
+  height: 30%;
+
 }
